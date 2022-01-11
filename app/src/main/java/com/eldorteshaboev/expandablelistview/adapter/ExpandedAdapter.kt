@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_group.view.*
 
 class ExpandedAdapter(
     var titleList: List<String>,
-    var map: HashMap<String,
+    var     map: HashMap<String,
             List<String>>
 ) :
     BaseExpandableListAdapter() {
