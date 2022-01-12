@@ -4,8 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AppProjects/ExpandableListView/app/src/main/res/layout/activity_main.xml" value="0.14" />
-        <entry key="..\:/AppProjects/ExpandableListView/app/src/main/res/layout/item_child.xml" value="0.22" />
-        <entry key="..\:/AppProjects/ExpandableListView/app/src/main/res/layout/item_group.xml" value="0.22083333333333333" />
+        <entry key="..\:/AppProjects/ExpandableListView/app/src/main/res/layout/item_child.xml" value="0.18" />
+        <entry key="..\:/AppProjects/ExpandableListView/app/src/main/res/layout/item_group.xml" value="0.18" />
       </map>
     </option>
   </component>

@@ -8,11 +8,16 @@ import com.eldorteshaboev.expandablelistview.R
 import kotlinx.android.synthetic.main.item_child.view.*
 import kotlinx.android.synthetic.main.item_group.view.*
 
+class Include(name: String, image: Int) {
+    var name: String? = name
+    var image: Int? = image
+}
+
 
 class ExpandedAdapter(
     var titleList: List<String>,
-    var     map: HashMap<String,
-            List<String>>
+    var map: HashMap<String,
+            List<Include>>
 ) :
     BaseExpandableListAdapter() {
 
@@ -69,13 +74,14 @@ class ExpandedAdapter(
         p3: View?,
         p4: ViewGroup?
     ): View {
-        var itemView:View
-        if (p3==null){
-            itemView = LayoutInflater.from(p4?.context).inflate(R.layout.item_child,p4,false)
-        } else{
+        val itemView: View
+        if (p3 == null) {
+            itemView = LayoutInflater.from(p4?.context).inflate(R.layout.item_child, p4, false)
+        } else {
             itemView = p3
         }
-itemView.itChild.text = map[titleList[p0]]!![p1]
+        itemView.itChild.text = map[titleList[p0]]!![p1].name
+        itemView.ivApple.setImageResource(map[titleList[p0]]!![p1].image!!)
 
         return itemView
     }
